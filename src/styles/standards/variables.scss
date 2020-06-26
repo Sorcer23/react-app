@@ -1,0 +1,32 @@
+// grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px
+);
+// grid containers
+// $container-max-widths: ( sm: 540px, md: 960px, lg: 1170px, xl: 1600px);
+// $container-max-widths: (1600px);
+$container-max-widths: (
+  sm: 540px,
+  md: 960px,
+  lg: 1170px
+);
+
+// grid columns
+$grid-columns: 12 !default;
+$gutter: 30px !default;
+$gutter-xs: 40px !default;
+// font
+$Muli: "Muli";
+$font-default: sans-serif;
+$body-font-size: 14px;
+// color
+//-----------------------------------------------------------------------------------
+$text-color: #000;
+$light: #fff;
+$site-color: #68385b;
+$site-color-light: #f8ab6b;
+$site-color-light: #f8ab6b;

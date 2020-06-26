@@ -1,0 +1,20 @@
+.page-alert {
+  position: relative;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}

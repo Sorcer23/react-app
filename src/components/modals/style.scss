@@ -1,0 +1,35 @@
+.ReactModal {
+  $this: &;
+
+  &__Overlay {
+    z-index: 100;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    text-align: center;
+
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      content: "";
+    }
+  }
+
+  &__Content {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    max-width: 90%;
+    opacity: 0;
+
+    &--after-open {
+      opacity: 1;
+      transition: opacity 300ms;
+    }
+
+    &--before-close {
+      opacity: 0;
+    }
+  }
+}

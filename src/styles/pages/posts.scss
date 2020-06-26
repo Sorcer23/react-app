@@ -1,0 +1,74 @@
+.post-preview {
+  position: relative;
+  margin: 0 7px 14px;
+  //margin: 0 15px 30px;
+  width: calc(33.3% - 14px);
+  //width: calc(33.3% - 30px);
+  border-radius: 4px;
+  min-height: 100px;
+  overflow: hidden;
+
+  @include media("<sm") {
+    width: calc(50% - 16px);
+    //margin: 0 8px 16px;
+  }
+  @include media(">lg") {
+    width: calc(25% - 14px);
+  }
+  //@include media(">xl") {
+  //  width: calc(16.6% - 14px);
+  //}
+  &__actions {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 18px;
+    @include media("<sm") {
+      padding: 10px;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__description {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.53px;
+    line-height: 19px;
+    padding: 15px;
+
+    @include media("<sm") {
+      font-size: 10px;
+      line-height: 14px;
+      padding: 6px;
+    }
+  }
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-left: -7px;
+  margin-right: -7px;
+  padding-top: 14px;
+  //margin-left: -15px;
+  //margin-right: -15px;
+
+  //@include media("<sm") {
+  //  margin-left: -8px;
+  //  margin-right: -8px;
+  //}
+}

@@ -1,0 +1,43 @@
+.page-list {
+  padding: 20px 40px;
+  overflow: auto;
+  @media (min-width: 768px) {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    text-align: left;
+  }
+  &__logo {
+    margin-bottom: 20px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  &__item {
+    filter: drop-shadow(1px 1px 2px #000);
+
+    margin-bottom: 10px;
+  }
+  &__link {
+    color: #fff;
+    font-size: 18px;
+    @include transition;
+    border-bottom: 1px dashed transparent;
+    &:hover {
+      border-color: #fff;
+    }
+  }
+}
+.page-list-wrap {
+  height: 100vh;
+  text-align: center;
+  background: url(/img/authorization-bg.jpg) center no-repeat;
+  background-size: cover;
+
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

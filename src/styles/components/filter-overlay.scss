@@ -1,0 +1,114 @@
+.filter-overlay {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__reset {
+    color: #68385b;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    margin-left: auto;
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  &__btn {
+    font-size: 80px;
+    color: #fff;
+    margin-left: auto;
+    background-color: #68385b;
+    border-radius: 50%;
+    display: flex;
+    //margin-bottom: 30px;
+  }
+}
+
+.filter-overlay-list {
+  //miheight: 60px;
+  box-shadow: 0 -3px 9px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 2px 2px 0 0;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  flex: 0 0 auto;
+
+  .select-tags__list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+    height: auto;
+  }
+}
+
+.filter-overlay-dropdown-wrap {
+  position: absolute;
+  right: 1px;
+  bottom: 90px;
+}
+
+.filter-overlay-dropdown {
+  right: 0px;
+  bottom: 100px;
+  width: 270px;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fbfbfb;
+  //max-height: 424px;
+  //overflow: auto;
+  position: absolute;
+
+  &__reset {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #dadada;
+  }
+
+  &__head {
+    height: 48px;
+    background-color: #34375a;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    justify-content: space-between;
+  }
+
+  &__apply {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  &__body {
+    //max-height: 300px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    &:after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: #fbfbfb;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+      right: 8px;
+      box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.6);
+    }
+  }
+}

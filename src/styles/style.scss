@@ -1,0 +1,50 @@
+$root: "/";
+// $root : "/";
+// import standards
+//-----------------------------------------------------------------------------------
+@import "standards/mixins.scss";
+@import "standards/variables.scss";
+@import "standards/reset.scss";
+@import "standards/media.scss";
+@import "standards/grid.scss";
+@import "standards/common.scss";
+@import "standards/extends.scss";
+@import "standards/helpers.scss";
+
+// import plugins
+//-----------------------------------------------------------------------------------
+@import "plugins/intlTelInput.scss";
+@import "plugins/flags";
+@import "plugins/collapse";
+// import components
+//-----------------------------------------------------------------------------------
+@import "components/btn.scss";
+@import "components/popup.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/sizing.scss";
+@import "components/form.scss";
+@import "components/plugins.scss";
+@import "components/page.scss";
+@import "components/sidebar.scss";
+@import "components/slider.scss";
+@import "components/pagination.scss";
+@import "components/datepicker.scss";
+@import "components/breadcrumb.scss";
+@import "components/actions-menu.scss";
+@import "components/filter-overlay.scss";
+@import "components/search.scss";
+@import "components/tabs.scss";
+@import "components/chat.scss";
+@import "components/page-alert.scss";
+@import "components/notifications.scss";
+// import pages
+//-----------------------------------------------------------------------------------
+@import "pages/index.scss";
+@import "pages/authorization.scss";
+@import "pages/profile.scss";
+@import "pages/pagelist.scss";
+@import "pages/posts.scss";
+@import "pages/product-detail.scss";
+@import "pages/all-pages.scss";
+@import "pages/providers.scss";

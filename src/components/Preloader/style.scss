@@ -1,0 +1,58 @@
+.preloader-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: background-color ease 0.15s;
+  pointer-events: none;
+}
+
+.preloader-spinner,
+.preloader-spinner:before,
+.preloader-spinner:after {
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  //color: $color-main;
+  animation-fill-mode: both;
+  animation: animation-preloader-spinner 1.8s infinite ease-in-out;
+}
+
+.preloader-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -1em;
+  transform: translate(-50%, -50%);
+  animation-delay: -0.16s;
+}
+
+.preloader-spinner:before,
+.preloader-spinner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.preloader-spinner:before {
+  left: -1.5em;
+  animation-delay: -0.32s;
+}
+
+.preloader-spinner:after {
+  left: 1.5em;
+}
+
+@keyframes animation-preloader-spinner {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 1em 0 -0.5em;
+  }
+
+  40% {
+    box-shadow: 0 1em 0 0;
+  }
+}
