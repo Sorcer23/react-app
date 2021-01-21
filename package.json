@@ -18,7 +18,7 @@
     "formik": "^2.0.6",
     "history": "^4.9.0",
     "i18next": "^19.0.2",
-    "immer": "^4.0.0",
+    "immer": "^8.0.1",
     "is-plain-object": "^3.0.0",
     "jszip": "^3.4.0",
     "lodash": "^4.17.15",
